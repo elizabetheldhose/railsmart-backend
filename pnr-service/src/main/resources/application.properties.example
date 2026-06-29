@@ -1,0 +1,6 @@
+spring.application.name=pnr-service
+server.port=8082
+
+spring.data.mongodb.uri=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>
+
+management.endpoints.web.exposure.include=health,info

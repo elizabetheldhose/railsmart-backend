@@ -14,7 +14,7 @@ public class TrainSearchService {
 
     private final TrainRepository trainRepository;
 
-    @Cacheable(value = "trains", key = "#from + '-' + #to")
+//    @Cacheable(value = "trains", key = "#from + '-' + #to")
     public List<Train> searchTrains(String from, String to) {
         return trainRepository.findBySourceAndDestination(from, to);
     }

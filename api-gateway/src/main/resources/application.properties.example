@@ -1,0 +1,6 @@
+spring.application.name=api-gateway
+server.port=8080
+
+spring.cloud.gateway.routes[0].uri=<train-search-service-url>
+spring.cloud.gateway.routes[1].uri=<pnr-service-url>
+spring.cloud.gateway.routes[2].uri=<alert-service-url>
